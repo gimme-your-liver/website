@@ -1,11 +1,19 @@
-
+import Bum from './components/Help';
+import { GeistProvider, CssBaseline } from '@geist-ui/react'
 
 function App() {
   return (
+    <GeistProvider>
+    <CssBaseline /> 
     <div>
-      <h2>Let's get started!</h2>
+      <Bum>Let's get started!</Bum>
     </div>
+    <App /> 
+  </GeistProvider>
+    
   );
 }
 
 export default App;
+
+
